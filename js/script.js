@@ -21,4 +21,16 @@ console.log(distance);
 let age = parseInt(prompt('Da quanto vivi? '));
 console.log(age);
 
+let prezzo = age*0.21;
+
+if (age < 18) {
+    prezzo = prezzo - ((prezzo/100)*20);
+    console.log(prezzo)
+}
+
+document.getElementById('prezzo').innerHTML = prezzo;
+
+
+
+
 
