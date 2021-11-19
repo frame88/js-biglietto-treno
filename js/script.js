@@ -21,17 +21,20 @@ console.log(distance);
 let age = parseInt(prompt('Da quanto vivi? '));
 console.log(age);
 
-//let target = ('persona di mezza eta ';)
+let target = ('mediano ');
+console.log(target);
 
 let prezzo = distance*0.21;
 
 if (age < 18) {
     prezzo = prezzo - ((prezzo/100)*20);
-    console.log(prezzo);
+    console.log(prezzo.toFixed(2));
+    target = ('minorenne');
 }
 else if ( age > 65) {
     prezzo = prezzo - ((prezzo / 100) * 40);
-    console.log(prezzo);
+    console.log(prezzo.toFixed(2));
+    target = ('over65');
 }
 
 else {
@@ -40,6 +43,7 @@ else {
 
 
 
+document.getElementById('target').innerHTML = target;
 document.getElementById('distance').innerHTML = distance;
 document.getElementById('prezzo').innerHTML = prezzo;
 
