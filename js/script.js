@@ -9,7 +9,16 @@ L’output del prezzo finale va messo fuori in forma umana(con massimo due decim
 Finito l’esercizio base, cercate di capire se potete semplificarlo: faccia_leggermente_sorridente:
 */
 
+/*
+1. crea due variabili: age, distance.
+2. crea un if seguito da un if-else e poi un else; 
+con condizioni: age<18, age>65, else NO-SALE.
+Alla fine converti in float.
+*/
 let distance = parseInt(prompt('Quanti chilometri intendi percorrere? '));
 console.log(distance);
 
-let age = parseInt(prompt('Da quanto vivi? '))
+let age = parseInt(prompt('Da quanto vivi? '));
+console.log(age);
+
+
